@@ -49,6 +49,7 @@ main {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .movie {
@@ -81,4 +82,5 @@ h2 {
   position: absolute;
   bottom: 0;
   color: rgb(247, 234, 234);
+  background-color: #6c6c6c87;
 }

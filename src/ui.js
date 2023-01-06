@@ -6,7 +6,7 @@ let maincontainer;
 function createSearchBar(options) {
   const searchBar = document.createElement('form');
   searchBar.classList.add('nav');
-  searchBar.innerHTML = `<button>search</button> <p>api</p> <p>forum</p> <i class="fa-brands fa-square-facebook"></i> 
+  searchBar.innerHTML = `<button>home</button> <p>api</p> <p>forum</p> <i class="fa-brands fa-square-facebook"></i> 
   <i class="fa-brands fa-square-twitter"></i> <input type = 'search' name ='searchTerm' placeholder = 'search'>`;
 
   searchBar.addEventListener('submit', (e) => {
@@ -20,7 +20,7 @@ function createSearchBar(options) {
 function createHeader({ onSearch }) {
   const header = document.createElement('header');
   header.classList.add('hero');
-  header.innerHTML = '<h1 class = "title"> THE MEAlDB<h1>';
+  header.innerHTML = '<h1 class = "title"> THE MEAl DB<h1>';
   header.appendChild(createSearchBar({ onSearch }));
   return header;
 }
@@ -34,7 +34,7 @@ function createMain() {
 function createMovie(meals) {
   const movieElement = document.createElement('div');
   movieElement.classList.add('movie');
-  movieElement.innerHTML = `<h2> ${meals.strMeal} </h2> <p>${meals.strCategory}</p>`;
+  movieElement.innerHTML = `<h2> ${meals.strMeal} </h2> <p> Area: ${meals.strArea}</p>`;
   const img = `${meals.strMealThumb}`;
   movieElement.style.backgroundImage = `url(${img})`;
   return movieElement;
