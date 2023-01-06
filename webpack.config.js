@@ -27,7 +27,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       clean: true,
-      title: 'Project',
+      title: 'mealdb',
       template: './src/index.html',
     }),
     new WebpackManifestPlugin(),
