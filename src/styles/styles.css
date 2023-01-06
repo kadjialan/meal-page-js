@@ -84,3 +84,11 @@ h2 {
   color: rgb(247, 234, 234);
   background-color: #6c6c6c87;
 }
+
+@media screen and (max-width: 768px) {
+    .fa-brands,
+    .nav p,
+    .nav button {
+        display: none;
+    }
+}
